@@ -1,1 +1,28 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
+.bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.label {
+  width: 100px;
+  margin-right: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.bar {
+  background-color: rgb(255, 0, 111);
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  padding-left: 8px;
+  border-radius: 5px;
+  min-width: 10px;
+}

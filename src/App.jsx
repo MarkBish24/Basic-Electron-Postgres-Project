@@ -16,13 +16,16 @@ function App() {
   return (
     <div>
       <h1>Fruit Bar Chart</h1>
-      <ul>
+      <div className="container">
         {users.map((user) => (
-          <li key={user.id}>
-            {user.name}: {user.amount}
-          </li>
+          <div key={user.id} className="bar-container">
+            <div className="label">{user.name}</div>
+            <div className="bar" style={{ width: `${user.amount * 10}px` }}>
+              {user.amount}
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
